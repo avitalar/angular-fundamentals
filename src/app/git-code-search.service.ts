@@ -3,6 +3,7 @@ import { GitCodeSearch } from './git-code-search';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/publishReplay';
+import { GitSearch } from './git-search';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import 'rxjs/add/operator/publishReplay';
 export class GitCodeSearchService {
 
   cachedValue: string;    
-  search: Observable<GitSearch>;
+  search: Observable<GitCodeSearch>;
   constructor(private http: HttpClient) {
   
   }

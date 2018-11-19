@@ -76,9 +76,8 @@
         score: number;
     }
 
-    export interface RootObject {
+     export interface GitCodeSearch {
         total_count: number;
         incomplete_results: boolean;
-        items: Item[];
     }
 
